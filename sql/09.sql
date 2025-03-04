@@ -8,3 +8,4 @@ FROM staff
 JOIN payment USING (staff_id)
 WHERE payment_date >= '2020-01-01%' AND payment_date < '2020-02-01%'
 GROUP BY first_name, last_name;
+ORDER BY first_name
